@@ -469,3 +469,37 @@ body {
     transform: translate(0, 0);
     transition: all 0.8s ease-out;
 }
+
+@media (max-width: 768px) {
+    /* Make project cards stack vertically */
+    .project-card {
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+        transform: translateX(0) !important; /* Reset any left/right translation */
+        margin: 20px 0; /* Reduce vertical spacing */
+    }
+    
+    /* Adjust project image to use full width */
+    .project-image {
+        width: 90%;
+        height: auto;
+        margin: 0 auto 20px;
+    }
+    
+    /* Ensure project info has some top margin for separation */
+    .project-info {
+        margin-top: 10px;
+    }
+    
+    /* Adjust the Game of Life canvas container if needed */
+    .gol-container {
+        max-width: 90%;
+        padding: 10px;
+    }
+    
+    /* Resize hero section canvas to better fill the space */
+    #particles {
+        height: 100%;
+    }
+}
