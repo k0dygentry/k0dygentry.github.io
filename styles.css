@@ -505,11 +505,5 @@ body {
 
     .hero h1 {
         font-size: 2rem;
-        color: #00e6b8;
-        font-weight: 700;
-        letter-spacing: 2px;
-        position: relative;
-        z-index: 10;
-        margin-bottom: 10px; /* Reduced space below title for compactness */
     }
 }
